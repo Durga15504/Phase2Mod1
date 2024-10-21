@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Concepts Example</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 80px;
+            height: 200px;
+            
+        }
+
+        .box {
+            margin: 10px;
+            padding: 15px;
+            border: 5px solid black;
+            background-color: lightgray;
+            flex: 1;
+            text-align: center;
+            height: 100px;
+            align-content: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+            height: 100px;
+        }
+
+        .grid-item {
+            padding: 20px;
+            background-color: lightpink;
+            text-align: center;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Layout Example</h1>
+
+    <div class="container">
+        <div class="box">Flex Item 1</div>
+        <div class="box">Flex Item 2</div>
+        <div class="box">Flex Item 3</div>
+    </div>
+
+    <h2>Grid Layout Example</h2>
+    <div class="grid-container">
+        <div class="grid-item">Grid Item 1</div>
+        <div class="grid-item">Grid Item 2</div>
+        <div class="grid-item">Grid Item 3</div>
+    </div>
+
+</body>
+</html>
