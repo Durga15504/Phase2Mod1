@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+    <style>
+    
+        h1 {
+            color: red;
+            text-align: center;
+            background-color: lightgreen;
+        }
+
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        #main p {
+            font-size: 16px;
+            color: darkslategray;
+        }
+
+        ul > li {
+            list-style-type: square;
+        }
+
+        input[type="text"] {
+            border: 1px solid gray;
+            padding: 5px;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        p::first-line {
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to My Website</h1>
+    
+    <div id="main">
+        <p class="highlight">This paragraph is highlighted.</p>
+        <p>This is a normal paragraph.</p>
+        
+        <h2>List of Items</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <ol>
+            <li>Apple</li>
+            <li>Custard</li>
+            <li>Banana</li>
+        </ol>
+
+        <input type="text" placeholder="Enter your name">
+        <br><br>
+        <a href="#">https://www.instagram.com</a>
+    </div>
+
+</body>
+</html>
